@@ -1,18 +1,21 @@
-import { delaunay, delaunayProcess } from './delaunay'
-import './style.css'
+import { delaunayProcess } from './delaunay'
+import { initDots } from './initDots'
 import { CanvasCoordTransform } from './utils'
+
+import './style.css'
 
 const CANVAS_ID = 'app'
 
 const TIMEOUT_MS = {
   HARE: 100,
-  TURTLE: 500,
-  ROCKET: 20,
+  TURTLE: 400,
+  ROCKET: 10,
 }
 
-const dots = []
+const dots = initDots
 
 function addDot(x, y) {
+  console.log(dots)
   dots.push([x, y])
 }
 
