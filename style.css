@@ -17,3 +17,74 @@ canvas {
   height: 100%;
   width: 100%;
 }
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  gap: 8px
+}
+
+.clean {
+  background-image: url('clean.svg');
+}
+
+.repeat {
+  background-image: url('repeat.svg');
+}
+
+.turtle {
+  background-image: url('turtle.svg');
+}
+
+.rocket {
+  background-image: url('rocket.svg');
+}
+
+.hare {
+  background-image: url('hare.svg');
+}
+
+.icon {
+  border: 2px solid black;
+  border-radius: 8px;
+  background-position: center;
+  background-size: contain;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  min-height: 40px;
+  min-width: 40px;
+  cursor: pointer;
+}
+
+.speed-control {
+  display: flex;
+}
+
+.speed-control .icon {
+  border-right: 0;
+  border-radius: 0;
+}
+.speed-control .icon:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right: 2px solid black;
+}
+
+.speed-control .icon:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.active {
+  background-color: rgba(121, 224, 20, 0.4);
+  pointer-events: none;
+}
+ 
+.icon:hover {
+  background-color: rgba(242, 224, 10, 0.4);
+}

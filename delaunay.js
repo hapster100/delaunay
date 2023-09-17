@@ -235,6 +235,7 @@ const triangsProcess = function* (dots, once = false) {
 } 
 
 export const delaunayProcess = function*(dots, once = false) {
+    if (dots.length === 0) return;
     const trianglesGen = triangsProcess(dots, once)
     let curr = trianglesGen.next()
     while(!curr.done) {
