@@ -30,23 +30,23 @@ canvas {
 }
 
 .clean {
-  background-image: url('clean.svg');
+  background-image: url('./icons/clean.svg');
 }
 
 .repeat {
-  background-image: url('repeat.svg');
+  background-image: url('./icons/repeat.svg');
 }
 
 .turtle {
-  background-image: url('turtle.svg');
+  background-image: url('./icons/turtle.svg');
 }
 
 .rocket {
-  background-image: url('rocket.svg');
+  background-image: url('./icons/rocket.svg');
 }
 
 .hare {
-  background-image: url('hare.svg');
+  background-image: url('./icons/hare.svg');
 }
 
 .icon {
