@@ -98,6 +98,7 @@ const inTriangle = (p, other) => {
 }
 
 const triangsProcess = function* (dots, once = false) {
+    if (dots.length < 3) return;
     const sorted = toSortedByXWithId(dots)
     
     const triangles = []
